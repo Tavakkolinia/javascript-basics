@@ -1,59 +1,104 @@
 export const negate = (a) => {
-  // your code here
+  return !a// your code here
 };
-
 export const both = (a, b) => {
-  // your code here
+  return a && b// your code here
 };
 
 export const either = (a, b) => {
-  // your code here
+  return a || b// your code here
 };
 
 export const none = (a, b) => {
-  // your code here
-};
+  if(!a && !b) {
+    return true
+  } else {
+    return false
+  }
+  
+  };
 
 export const one = (a, b) => {
-  // your code here
+  if((a && !b) || (!a && b)) {
+    return true;
+  } else {
+    return false;
+  }
+
+  
+// your code here
 };
 
 export const truthiness = (a) => {
+  if(!!a) {
+    return true;
+  } else {
+    return false;
+  }
   // your code here
 };
 
 export const isEqual = (a, b) => {
-  // your code here
+  return a === b// your code here
 };
 
 export const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b// your code here
 };
 
 export const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  if (a <= b) {
+    return true
+  } else {
+    return false
+  }// your code here
 };
 
 export const isOdd = (a) => {
+  if(a % 2 !== 0) {
+    return true
+  } else {
+    return false
+  }
   // your code here
 };
 
 export const isEven = (a) => {
+  if(a % 2 == 0) {
+    return true
+  } else {
+    return false
+  }
   // your code here
 };
 
 export const isSquare = (a) => {
-  // your code here
+  if(Math.sqrt(a) % 1 === 0) {
+    return true
+  } else {
+    return false
+  }// your code here
 };
 
 export const startsWith = (char, string) => {
-  // your code here
+  if(string.startsWith(char)) {
+    return true
+  } else {
+    return false
+  }// your code here
 };
 
 export const containsVowels = (string) => {
-  // your code here
+  if( string.includes(['a', 'e', 'i', 'o','u', 'A', 'I', 'E', 'O', 'U'], 0)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 export const isLowerCase = (string) => {
-  // your code here
+  if(string === string.toLowerCase()) {
+    return true
+  } else {
+    return false }// your code here
 };
