@@ -1,45 +1,65 @@
 export const getNthElement = (index, array) => {
-  // your code here
+  for(let i = 0; i < array.length; i++) {
+    return array[index]
+  }
+  
 };
 
+
 export const arrayToCSVString = (array) => {
-  // your code here
+  return array.join(',')// your code here
 };
 
 export const csvStringToArray = (string) => {
-  // your code here
+  return string.replace(/,/g, '').split('')// your code here
 };
 
-export const addToArray = (array, element) => {
-  // your code here
+export const addToArray = (element, array) => {
+  array.push(element)// your code here
 };
 
-export const addToArray2 = (array, element) => {
-  // your code here
+export const addToArray2 = (element, array) => {
+  const array2 = array.concat(array2);
+  array2.push(element);
+  return array2// your code here
 };
 
 export const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1)// your code here
 };
 
 export const numbersToStrings = (numbers) => {
-  // your code here
+  return numbers.toString().split(",");// your code here
 };
 
 export const uppercaseWordsInArray = (strings) => {
-  // your code here
+  return strings.map(function(x) {
+    return x.toUpperCase();
+  });
 };
 
 export const reverseWordsInArray = (strings) => {
-  // your code here
+  for(let i = strings.length - 1; i >= 0; i--) {
+    return strings.map(function(x) {
+      return x.split("").reverse().join("")
+    });
+  }
+    
 };
 
 export const onlyEven = (numbers) => {
-  // your code here
+  return numbers.filter(function(x) {
+    return x % 2 === 0;
+  });// your code here
 };
 
 export const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArray = array;
+  for (let i = 0; i < array.length; i++) {
+    return newArray.slice(index).concat(array);
+
+  }
+  
 };
 
 export const elementsStartingWithAVowel = (strings) => {
@@ -47,10 +67,17 @@ export const elementsStartingWithAVowel = (strings) => {
 };
 
 export const removeSpaces = (string) => {
-  // your code here
+  return string.split(" ").join("")// your code here
 };
 
 export const sumNumbers = (numbers) => {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+
+  } 
+  return sum;
+  
   // your code here
 };
 
